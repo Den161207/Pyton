@@ -1,0 +1,26 @@
+cars = ["Honda", "BMW", "Audi"]
+
+choise = int(
+    input("1. Add car\n2. Remove car\n3. Show all cars\n4. Rename car\n5. Sort cars\n6. Reversce sort\n--> "))
+
+if choise == 1:
+    car = input("Enter car name to add: ")
+    cars.append(car)
+    print(cars)
+elif choise == 2:
+    car = input("Enter car name to remove: ")
+    cars.remove(car)
+    print(cars)
+elif choise == 3:
+    print(cars)
+elif choise == 4:
+    car_name = input("Enter car name to rename: ")
+    if car_name not in cars:
+        print("Car not found. ")
+    else:
+        index = cars.index(car_name)
+        new_name = input("Enter new car name: ")
+        cars[index] = new_name
+
+
+print(cars)
