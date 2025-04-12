@@ -1,0 +1,13 @@
+# for item in prog_lang:
+#     if item == "Java":
+#         print(f"{item} is the best!")
+
+# for item in range(len(prog_lang)):
+#     # item = index
+#     print(prog_lang[item])
+
+count = 0
+
+while count <= 10:
+    count += 1
+    print(count)
